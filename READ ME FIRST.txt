@@ -1,0 +1,18 @@
+NOW Website — static review 07
+
+Upload all HTML pages, css/, js/, assets/, robots.txt and _headers together.
+Open index.html. Relative paths support a folder preview or a static host subfolder.
+No Next.js server, Node server, install or build is needed to view this package.
+
+EDITING
+Static headings, copy and links are in the root HTML pages. All styles are in css/site.css.
+Interactive behaviour and its content are in the single readable js/site.js bundle (search for the named component or text). React runtime is included; do not edit its library sections.
+Interactive sections carry data-now-component markers. Their HTML is a reading fallback; JavaScript renders those sections when enabled, so change interactive copy in the shared JavaScript, not only its fallback HTML.
+The original typed authoring source is retained separately for future substantial edits.
+
+REVIEW ONLY
+Form completion runs locally in browser memory: no transmission, storage, Formspree, email or Scoro. Analytics disabled.
+YouTube films connect externally only when opened.
+All HTML has noindex; robots disallows crawling. Configure X-Robots-Tag where your host supports it; _headers is host-specific. Noindex is not access control or a secrecy guarantee.
+Do not link publicly, activate submissions or change the main live website.
+Please return the staging URL for desktop/mobile checking before team circulation.
