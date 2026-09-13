@@ -30,3 +30,10 @@ main h1[tabindex="-1"]:focus{outline:none}
 #board-form label{font-weight:700}.board-name-row{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}.board-name-row input{flex:1;min-width:140px;background:#fff;border:1px solid #777;border-radius:10px;color:#20231d;padding:12px;font:inherit}#board-form .icon-button{color:#20231d}.board-modal .smallprint{color:#4e5845}
 #board-status{white-space:pre-line;overflow-wrap:anywhere;font-size:14px}.board-modal .primary{margin-top:8px}.top-actions{flex-wrap:wrap}
 @media(max-width:520px){.board-row{grid-template-columns:25px minmax(0,1fr) 57px;gap:8px}.board-row strong{font-size:15px}.board-row>b{font-size:26px}.board-tabs button{font-size:13px;padding:10px 13px}.board-modal{max-height:94dvh;padding:22px}.top-actions .icon-button{font-size:12px}}
+.practice-guide{grid-column:1/-1;position:sticky;top:8px;z-index:6;background:#f5f0e5;color:#242620;border:2px solid #ff4e00;border-radius:18px;padding:14px 20px;margin-bottom:12px}
+.practice-guide>div{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.practice-guide p{margin:5px 0 0;max-width:650px;font-size:15px;line-height:1.4}
+.practice-guide strong{font-size:12px;letter-spacing:.1em}
+.practice-guide button{flex-shrink:0;min-height:44px;color:#242620!important}
+.field-manual summary{cursor:pointer;font-weight:700;padding:8px 0;min-height:44px}
+@media(max-width:600px){.practice-guide{padding:12px}.practice-guide>div{display:block}.practice-guide button{margin-top:8px}.practice-guide p{font-size:14px}}

@@ -70,7 +70,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!e.defaultPrevented
 function restoreRoute(){const path=routeFromHash(location.hash);if(path.join('/')!==state.path.join('/')){state.path=path;state.preview=null;state.hovered=null;state.revealed=true;closeMenu(false);render();}}
 window.addEventListener('popstate',restoreRoute);window.addEventListener('hashchange',restoreRoute);
 motionQuery.addEventListener('change',e=>{state.paused=e.matches;syncMotion();updateScene();});
-function help(){const touch=matchMedia('(hover: none)').matches;$('interaction-help').textContent=state.path.length>1?'Choose where to explore. Centre takes you back.':touch?'Tap the centre to reveal more. Choose where to explore.':'Hover to reveal. Click to explore.';}
+function help(){const touch=matchMedia('(hover: none), (pointer: coarse)').matches;$('interaction-help').textContent=state.path.length>1?'Choose where to explore. Centre takes you back.':touch?'Tap the centre to reveal. Tap an orbit to explore.':'Select the centre to reveal. Hover to peek; click to explore.';}
 window.addEventListener('resize',help);help();syncMotion();render();
 try{
  if(new URLSearchParams(location.search).get('render')==='flat')throw new Error('Flat preview requested');

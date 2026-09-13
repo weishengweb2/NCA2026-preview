@@ -1,6 +1,6 @@
 // Public client configuration only. Never put a CreateSend API key in this file.
 export const services = Object.freeze({
-  release: 'action-05',
+  release: 'action-06',
   measurementId: 'G-EL97J47SBN',
   // Set only after a real subscription endpoint and its consent/suppression handling are verified.
   subscriptionEndpoint: '',
