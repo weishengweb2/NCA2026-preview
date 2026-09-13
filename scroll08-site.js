@@ -25,9 +25,9 @@
     mod
   ));
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js
+  // ../website/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js
   var require_scheduler_production = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js"(exports) {
+    "../website/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js"(exports) {
       "use strict";
       function push(heap, node) {
         var index = heap.length;
@@ -298,9 +298,9 @@
     }
   });
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js
+  // ../website/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js
   var require_scheduler = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js"(exports, module) {
+    "../website/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js"(exports, module) {
       "use strict";
       if (true) {
         module.exports = require_scheduler_production();
@@ -310,9 +310,9 @@
     }
   });
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/react@19.2.4/node_modules/react/cjs/react.production.js
+  // ../website/node_modules/.pnpm/react@19.2.4/node_modules/react/cjs/react.production.js
   var require_react_production = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/react@19.2.4/node_modules/react/cjs/react.production.js"(exports) {
+    "../website/node_modules/.pnpm/react@19.2.4/node_modules/react/cjs/react.production.js"(exports) {
       "use strict";
       var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element");
       var REACT_PORTAL_TYPE = Symbol.for("react.portal");
@@ -751,9 +751,9 @@
     }
   });
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/react@19.2.4/node_modules/react/index.js
+  // ../website/node_modules/.pnpm/react@19.2.4/node_modules/react/index.js
   var require_react = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/react@19.2.4/node_modules/react/index.js"(exports, module) {
+    "../website/node_modules/.pnpm/react@19.2.4/node_modules/react/index.js"(exports, module) {
       "use strict";
       if (true) {
         module.exports = require_react_production();
@@ -763,9 +763,9 @@
     }
   });
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/cjs/react-dom.production.js
+  // ../website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/cjs/react-dom.production.js
   var require_react_dom_production = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/cjs/react-dom.production.js"(exports) {
+    "../website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/cjs/react-dom.production.js"(exports) {
       "use strict";
       var React = require_react();
       function formatProdErrorMessage(code) {
@@ -912,9 +912,9 @@
     }
   });
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/index.js
+  // ../website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/index.js
   var require_react_dom = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/index.js"(exports, module) {
+    "../website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/index.js"(exports, module) {
       "use strict";
       function checkDCE() {
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") {
@@ -938,9 +938,9 @@
     }
   });
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/cjs/react-dom-client.production.js
+  // ../website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/cjs/react-dom-client.production.js
   var require_react_dom_client_production = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/cjs/react-dom-client.production.js"(exports) {
+    "../website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/cjs/react-dom-client.production.js"(exports) {
       "use strict";
       var Scheduler = require_scheduler();
       var React = require_react();
@@ -12683,9 +12683,9 @@
     }
   });
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/client.js
+  // ../website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/client.js
   var require_client = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/client.js"(exports, module) {
+    "../website/node_modules/.pnpm/react-dom@19.2.4_react@19.2.4/node_modules/react-dom/client.js"(exports, module) {
       "use strict";
       function checkDCE() {
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") {
@@ -12709,9 +12709,9 @@
     }
   });
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/react@19.2.4/node_modules/react/cjs/react-jsx-runtime.production.js
+  // ../website/node_modules/.pnpm/react@19.2.4/node_modules/react/cjs/react-jsx-runtime.production.js
   var require_react_jsx_runtime_production = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/react@19.2.4/node_modules/react/cjs/react-jsx-runtime.production.js"(exports) {
+    "../website/node_modules/.pnpm/react@19.2.4/node_modules/react/cjs/react-jsx-runtime.production.js"(exports) {
       "use strict";
       var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element");
       var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
@@ -12739,9 +12739,9 @@
     }
   });
 
-  // Now Marketing/Website 2026/website/node_modules/.pnpm/react@19.2.4/node_modules/react/jsx-runtime.js
+  // ../website/node_modules/.pnpm/react@19.2.4/node_modules/react/jsx-runtime.js
   var require_jsx_runtime = __commonJS({
-    "Now Marketing/Website 2026/website/node_modules/.pnpm/react@19.2.4/node_modules/react/jsx-runtime.js"(exports, module) {
+    "../website/node_modules/.pnpm/react@19.2.4/node_modules/react/jsx-runtime.js"(exports, module) {
       "use strict";
       if (true) {
         module.exports = require_react_jsx_runtime_production();
@@ -12751,10 +12751,10 @@
     }
   });
 
-  // Now Marketing/Website 2026/plain-export-tools/client.tsx
+  // client.tsx
   var import_client = __toESM(require_client(), 1);
 
-  // Now Marketing/Website 2026/plain-export-tools/link.tsx
+  // link.tsx
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   function localHref(href) {
     if (!href.startsWith("/") || href.startsWith("//")) return href;
@@ -12765,13 +12765,13 @@
     return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", { ...props, href: localHref(String(href)) });
   }
 
-  // Now Marketing/Website 2026/plain-export-tools/navigation.ts
+  // navigation.ts
   function usePathname() {
     const n = location.pathname.split("/").pop() || "index.html";
     return n === "index.html" ? "/" : "/" + n.replace(/\.html$/, "");
   }
 
-  // Now Marketing/Website 2026/static-review/components/navigation.tsx
+  // ../static-review/components/navigation.tsx
   var import_react = __toESM(require_react());
   var import_jsx_runtime2 = __toESM(require_jsx_runtime());
   function Navigation() {
@@ -12787,6 +12787,7 @@
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("nav", { id: "site-nav", className: open ? "open" : "", "aria-label": "Main navigation", children: [
         links.map(([href, label]) => /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Link, { href, "aria-current": path === href ? "page" : void 0, onClick: () => setOpen(false), children: label }, href)),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", { href: "./game.html?from=scrolling", onClick: () => setOpen(false), children: "Play the game" }),
         /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Link, { className: "button orange small", href: "/start-a-project?source=header", onClick: () => setOpen(false), children: [
           "Start a project ",
           /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { "aria-hidden": "true", children: "\u2197" })
@@ -12795,7 +12796,7 @@
     ] });
   }
 
-  // Now Marketing/Website 2026/static-review/components/brand-stop.tsx
+  // ../static-review/components/brand-stop.tsx
   var import_jsx_runtime3 = __toESM(require_jsx_runtime());
   function BrandStop({ word }) {
     return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("span", { className: word ? "brand-word" : void 0, children: [
@@ -12805,7 +12806,7 @@
     ] });
   }
 
-  // Now Marketing/Website 2026/static-review/components/different-hero.tsx
+  // ../static-review/components/different-hero.tsx
   var import_jsx_runtime4 = __toESM(require_jsx_runtime());
   function DifferentHero() {
     return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("section", { className: "different-hero", onPointerMove: (e) => {
@@ -12862,10 +12863,10 @@
     ] });
   }
 
-  // Now Marketing/Website 2026/static-review/components/intent-selector.tsx
+  // ../static-review/components/intent-selector.tsx
   var import_react2 = __toESM(require_react());
 
-  // Now Marketing/Website 2026/static-review/lib/expanded-content.ts
+  // ../static-review/lib/expanded-content.ts
   var expandedCases = [
     {
       "client": "Intent.asia",
@@ -13101,7 +13102,7 @@
     }
   ];
 
-  // Now Marketing/Website 2026/static-review/lib/content.ts
+  // ../static-review/lib/content.ts
   var provenance = { evidenceStatus: "source-checked for internal strategy", mediaStatus: "internal review; public-use confirmation pending", sourceOwner: "NOW Marketing / Andrew", verificationDate: "2026-09-10", publicationStatus: "internal-review" };
   var cases = [
     { ...provenance, slug: "listerine-labs", client: "Listerine", title: "Make the science something people can step into.", summary: "An immersive experience that put oral-health education into people\u2019s hands.", market: "Thailand", category: "Immersive experience", image: "scroll08-media-listerine.webp", alt: "The colourful Listerine Labs experience and interactive foyer in Thailand", video: "Hg-UEqrm_Uo", brief: "Give people a reason to engage with oral-health education beyond a product message. Turn information into something they want to explore.", move: "An immersive lab gave the story a physical form. Interactive experiences brought education and product proof together in a setting designed around the local audience.", connected: ["Audience understanding", "Experience design", "Creative and content", "Local event delivery"], outcome: "The experience connected product education with active participation. The lesson for the next brief: give an audience a useful role in the story.", source: "https://www.nowcomms.asia/case-studies/listerine-labs-2024" },
@@ -13130,11 +13131,11 @@
     { id: "everyday", label: "Make the everyday event matter", copy: "A small room can still move a big idea.", caseSlug: "dell-ai-at-scale" }
   ];
 
-  // Now Marketing/Website 2026/static-review/lib/analytics.ts
+  // ../static-review/lib/analytics.ts
   function track(_event, _context = {}) {
   }
 
-  // Now Marketing/Website 2026/static-review/components/intent-selector.tsx
+  // ../static-review/components/intent-selector.tsx
   var import_jsx_runtime5 = __toESM(require_jsx_runtime());
   function IntentSelector() {
     const [selected, setSelected] = (0, import_react2.useState)(intents[0]);
@@ -13182,7 +13183,7 @@
     ] });
   }
 
-  // Now Marketing/Website 2026/static-review/components/work.tsx
+  // ../static-review/components/work.tsx
   var import_react3 = __toESM(require_react());
   var import_jsx_runtime6 = __toESM(require_jsx_runtime());
   function CaseCard({ item }) {
@@ -13264,10 +13265,10 @@
     ] });
   }
 
-  // Now Marketing/Website 2026/static-review/components/region-discovery.tsx
+  // ../static-review/components/region-discovery.tsx
   var import_react4 = __toESM(require_react());
 
-  // Now Marketing/Website 2026/static-review/lib/regional-projects.ts
+  // ../static-review/lib/regional-projects.ts
   var regionalMarkets = [
     { id: "singapore", name: "Singapore", code: "SGP", group: "asean", lon: 103.82, lat: 1.35, city: "Singapore", line: "The right people. A different conversation.", understanding: "For regional audiences, the experience has to connect the big idea with a useful next conversation.", projects: [{ id: "panw-sg", client: "Palo Alto Networks", title: "Ignite on Tour", type: "Executive engagement", summary: "Bringing a cybersecurity community together around shared challenges.", detail: "A live setting for participation and peer connection. This Singapore selection sits within the wider regional Ignite story; no attendance or outcome claim is added here.", image: "scroll08-media-panw.webp", alt: "Participants at Palo Alto Networks in Singapore", status: "Internal image selection \xB7 case review pending" }] },
     { id: "thailand", name: "Thailand", code: "THA", group: "asean", lon: 100.5, lat: 13.75, city: "Bangkok", line: "Make the audience part of the idea.", understanding: "An idea becomes more useful when people can step inside it, try it and make it their own.", projects: [{ id: "canalys-bangkok", client: "Canalys", title: "Canalys Forums \xB7 Bangkok 2023", type: "Regional conference", summary: "One regional community. A distinctly Thai experience.", detail: "NOW Thailand\u2019s portfolio records stage design, visual and sound production, entertainment, sunrise activities and logistics for the Bangkok forum. The regional programme was expressed through the experience of its host city.", status: "Thailand portfolio and project meeting records checked \xB7 final website approval pending" }, { id: "listerine", client: "Listerine", title: "Listerine Labs", type: "Immersive experience", summary: "Oral-health education, made hands-on.", detail: "An immersive lab brought product education and interaction together around the local audience.", image: "scroll08-media-listerine.webp", alt: "Listerine Labs interactive foyer in Thailand", video: "Hg-UEqrm_Uo", caseSlug: "listerine-labs", status: "Existing NOW case \xB7 internal website review" }] },
@@ -13287,7 +13288,7 @@
     }));
   }
 
-  // Now Marketing/Website 2026/static-review/components/region-discovery.tsx
+  // ../static-review/components/region-discovery.tsx
   var import_jsx_runtime7 = __toESM(require_jsx_runtime());
   var groups = [{ id: "asean", label: "Southeast Asia", line: "Regional ambition. Local expression." }, { id: "north", label: "North Asia", line: "A different way into the story." }, { id: "pacific", label: "Australia + Pacific", line: "Let the destination do more." }];
   function RegionDiscovery({ onSelect, onRegionChange, selected = "singapore" }) {
@@ -13317,7 +13318,7 @@
     ] });
   }
 
-  // Now Marketing/Website 2026/static-review/components/asia-explorer.tsx
+  // ../static-review/components/asia-explorer.tsx
   var import_react5 = __toESM(require_react());
   var import_jsx_runtime8 = __toESM(require_jsx_runtime());
   var canalysJourney = [{ market: "thailand", project: "canalys-bangkok", label: "Bangkok \xB7 2023" }, { market: "indonesia", project: "canalys", label: "Bali \xB7 2024" }, { market: "vietnam", project: "canalys-vietnam", label: "Vietnam \xB7 2025" }];
@@ -13491,7 +13492,7 @@
     ] });
   }
 
-  // Now Marketing/Website 2026/static-review/components/brand-loop.tsx
+  // ../static-review/components/brand-loop.tsx
   var import_react6 = __toESM(require_react());
   var import_jsx_runtime9 = __toESM(require_jsx_runtime());
   function BrandLoop({ chapters, label, initial = 0 }) {
@@ -13542,7 +13543,7 @@
     ] });
   }
 
-  // Now Marketing/Website 2026/static-review/lib/loop-content.ts
+  // ../static-review/lib/loop-content.ts
   var approachChapters = [
     { label: "Discover", heading: "Find the reason to care.", copy: "Start with the people, not the platform. Understand the audience, the business context and the question behind the brief.", details: ["Audience insight", "Strategy development", "Audience acquisition"] },
     { label: "Create", heading: "Make the idea impossible to ignore.", copy: "Give the strategy a distinctive expression. Connect story, content, technology and experience design around what needs to move.", details: ["Creative concepts", "Film and content", "Experience design"] },
@@ -13554,7 +13555,7 @@
     { label: "Next", heading: "Whatever moves your audience next.", copy: "New tools. New expectations. New ways to participate. We stay curious about the possibilities, and practical about what will make a difference to your brief.", details: ["Curiosity with purpose", "Ideas worth experiencing", "Your next unsolved brief"] }
   ];
 
-  // Now Marketing/Website 2026/static-review/components/project-form.tsx
+  // ../static-review/components/project-form.tsx
   var import_react7 = __toESM(require_react());
   var import_jsx_runtime10 = __toESM(require_jsx_runtime());
   function ProjectForm({ context }) {
@@ -13720,7 +13721,7 @@
     ] }) });
   }
 
-  // Now Marketing/Website 2026/static-review/components/video.tsx
+  // ../static-review/components/video.tsx
   var import_react8 = __toESM(require_react());
   var import_jsx_runtime11 = __toESM(require_jsx_runtime());
   function Video({ id, title, poster }) {
@@ -13745,7 +13746,7 @@
     ] });
   }
 
-  // Now Marketing/Website 2026/plain-export-tools/client.tsx
+  // client.tsx
   var import_jsx_runtime12 = __toESM(require_jsx_runtime(), 1);
   var components = { Navigation, DifferentHero, IntentSelector, ProofGrid, RegionDiscovery, AsiaExplorer, BrandLoop, ProjectForm, Video };
   document.querySelectorAll("[data-now-component]").forEach((element) => {
