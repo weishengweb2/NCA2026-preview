@@ -1,13 +1,13 @@
-// Generated engine playthroughs with active hazards; not human player results.
+// Andrew: user-confirmed result. Other entries: engine playthroughs with active hazards, explicitly simulated.
 export const seedRuns=[
   {
-    "id": "sim-0",
-    "name": "First day energy",
-    "kind": "simulation",
+    "id": "andrew-review-20260913",
+    "name": "Andrew",
+    "kind": "human",
     "mode": "standard",
-    "score": 80,
+    "score": 76,
     "chapters": 5,
-    "seconds": 526
+    "seconds": null
   },
   {
     "id": "sim-1",
