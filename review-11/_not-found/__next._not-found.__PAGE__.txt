@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:I[4639,[],"OutletBoundary"]
+3:"$Sreact.suspense"
+7:I[4639,[],"ViewportBoundary"]
+8:I[4639,[],"MetadataBoundary"]
+a:I[7046,[],""]
+b:I[3196,[],""]
+e:I[3547,["547","static/chunks/547-3f1aa85e3ac7c647.js","651","static/chunks/651-9ea8219cf5a6ebd4.js","974","static/chunks/app/page-e05171dfeeca3d26.js"],""]
+f:I[9053,["547","static/chunks/547-3f1aa85e3ac7c647.js","177","static/chunks/app/layout-584e7a66104b9b10.js"],"Navigation"]
+10:I[2166,["547","static/chunks/547-3f1aa85e3ac7c647.js","177","static/chunks/app/layout-584e7a66104b9b10.js"],"RouteArrival"]
+:HL["/NCA2026-preview/review-11/_next/static/css/04d8c63f7dfcf4ec.css","style"]
+:HL["/NCA2026-preview/review-11/media/now-brand-lockup.png","image"]
+6:X
+d:X
+d:C
+11:["$","style",null,{"children":"header nav{display:flex!important}.menu-toggle{display:none!important}.region-rail{display:block!important;overflow:visible!important}.intent-options{display:none!important}"}]
+0:{"buildId":"iGbHGC7y5vhwoeDdbBHds","data":[{"rsc":["$","$1","c",{"children":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L7",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L8",null,{"children":["$","$3",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"NOW Comms Asia — A different way in."}],["$","meta","1",{"name":"description","content":"Experience and activation across Asia. Kinda Different thinking, brought to life."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}]]}]}]}],null]}],"isPartial":"$@9","staleTime":"$6","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","template":["$","$Lb",null,{}]}]]}],"isPartial":"$@c","staleTime":"$6","varyParams":"$d"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/NCA2026-preview/review-11/_next/static/css/04d8c63f7dfcf4ec.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","div",null,{"className":"review-strip","children":[["$","span",null,{"children":"NOW / REVIEW 11 — TEST SITE"}],["$","a",null,{"href":"https://weishengweb2.github.io/NCA2026-preview/identity-05.html","children":"Immersive alternative ↗"}],["$","$Le",null,{"href":"/review","children":"Review guide ↗"}]]}],["$","$Lf",null,{}],["$","$L10",null,{}],["$","noscript",null,{"children":"$11"}],["$","main",null,{"id":"main","tabIndex":-1,"children":["$","$La",null,{"parallelRouterKey":"children","template":["$","$Lb",null,{}]}]}],["$","footer",null,{"children":[["$","div",null,{"className":"footer-top","children":[["$","img",null,{"src":"/NCA2026-preview/review-11/media/now-brand-lockup.png","width":"337","height":"263","alt":"NOW Comms Asia — Kinda Different"}],["$","p",null,{"children":["Good questions.",["$","br",null,{}],"Different possibilities.",["$","br",null,{}],"Across Asia."]}],["$","$Le",null,{"className":"text-link","href":"/start-a-project?source=footer","children":"Let’s make something move ↗"}]]}],["$","div",null,{"className":"footer-bottom","children":[["$","span",null,{"children":["© ",2026," NOW Communications Asia"]}],["$","div",null,{"children":[["$","a",null,{"href":"https://nowdmc.com/","target":"_blank","rel":"noreferrer","children":"Our destination division · NowDMC ↗"}],["$","$Le",null,{"href":"/privacy","children":"Privacy"}],["$","$Le",null,{"href":"/cookies","children":"Cookies"}],["$","$Le",null,{"href":"/accessibility","children":"Accessibility"}],["$","$Le",null,{"href":"/review","children":"Internal review"}]]}]]}]]}]]}]}]]}],"isPartial":"$@12","staleTime":"$6","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@13","rootVaryParams":null,"needsRuntimeRequest":"$@14"}
+4:null
+6:300
+14:true
+6:C
+13:0
+9:"$undefined"
+c:"$undefined"
+12:"$undefined"
+5:"$undefined"
