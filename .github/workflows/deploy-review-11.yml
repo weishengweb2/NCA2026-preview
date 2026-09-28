@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - name: Verify and install fixed review package
         run: |
-          echo 'defcdf270fe7cdf81e4cf614bca9f8c2a39d7d9579c74f4ab369cd599011eca7  review-11-build.zip' | sha256sum --check --strict
+          echo 'd5af894fb0aebe3b682fbd4b8ddc16a6cfafd174072777a291d818c355bd88de  review-11-build.zip' | sha256sum --check --strict
           unzip -oq review-11-build.zip
           test -f review-11/index.html
           test -f review-11/work/mclaren-unconventional-symphony/index.html
@@ -28,4 +28,3 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds" --silent
-
