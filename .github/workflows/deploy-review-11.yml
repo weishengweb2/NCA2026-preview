@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - name: Verify and install fixed review package
         run: |
-          echo 'd5af894fb0aebe3b682fbd4b8ddc16a6cfafd174072777a291d818c355bd88de  review-11-build.zip' | sha256sum --check --strict
+          echo 'c79372b5f2aa2c87e0512809cecc5f0d7491665e9b9db8127d439d208e0c767e  review-11-build.zip' | sha256sum --check --strict
           unzip -oq review-11-build.zip
           test -f review-11/index.html
           test -f review-11/work/mclaren-unconventional-symphony/index.html
