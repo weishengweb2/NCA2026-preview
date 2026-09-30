@@ -1,4 +1,4 @@
-:HL["/NCA2026-preview/review-11/_next/static/css/c4dce3038ca89b58.css","style"]
+:HL["/NCA2026-preview/review-11/_next/static/css/676e66abd70bf02a.css","style"]
 :HL["/NCA2026-preview/review-11/media/now-brand-lockup.png","image"]
-:HL["/NCA2026-preview/review-11/media/redhat-live-sketch.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"work","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"Eo_fxfcNQ9n5wigYuSQmy"}
+:HL["/NCA2026-preview/review-11/media/responsive/redhat-live-sketch-1600.webp","image",{"imageSrcSet":"/NCA2026-preview/review-11/media/responsive/redhat-live-sketch-480.webp 480w, /NCA2026-preview/review-11/media/responsive/redhat-live-sketch-960.webp 960w, /NCA2026-preview/review-11/media/responsive/redhat-live-sketch-1600.webp 1600w","imageSizes":"(max-width: 700px) 100vw, (max-width: 1100px) 70vw, 60vw"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"work","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"RyR0OCgRVaYjRMQcBN9m5"}
