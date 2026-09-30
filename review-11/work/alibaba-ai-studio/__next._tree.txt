@@ -1,4 +1,4 @@
-:HL["/NCA2026-preview/review-11/_next/static/css/676e66abd70bf02a.css","style"]
+:HL["/NCA2026-preview/review-11/_next/static/css/4b7671615c6b94e8.css","style"]
 :HL["/NCA2026-preview/review-11/media/now-brand-lockup.png","image"]
 :HL["/NCA2026-preview/review-11/media/responsive/alibaba-ai-studio-800.webp","image",{"imageSrcSet":"/NCA2026-preview/review-11/media/responsive/alibaba-ai-studio-480.webp 480w, /NCA2026-preview/review-11/media/responsive/alibaba-ai-studio-800.webp 800w","imageSizes":"(max-width: 700px) 100vw, (max-width: 1100px) 70vw, 60vw","fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"work","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"alibaba-ai-studio","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"RyR0OCgRVaYjRMQcBN9m5"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"work","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"alibaba-ai-studio","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"tdZHYUAk3sbyM8fMYmlWN"}
