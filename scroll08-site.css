@@ -69,7 +69,7 @@
 
 /* ===== app/scrolling.css ===== */
 /* Scrolling 08: the Identity content and brand grammar, with ordinary document flow. */
-.review-strip{gap:18px;flex-wrap:wrap}.review-strip>span{margin-right:auto}
+.review-strip{gap:18px;flex-wrap:wrap;display:none;}.review-strip>span{margin-right:auto}
 .different-title h1 em .brand-stop{transform:none}
 .work-intro{display:grid;grid-template-columns:1.2fr 1fr;gap:7%;align-items:center}
 .work-intro figure{margin:0;position:relative;max-width:510px;justify-self:end}
