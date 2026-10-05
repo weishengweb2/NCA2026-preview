@@ -1,0 +1,4 @@
+:HL["/_next/static/css/8cc7e8cf254cb1f5.css","style"]
+:HL["/media/now-brand-lockup.png","image"]
+:HL["/media/responsive/redhat-live-sketch-1600.webp","image",{"imageSrcSet":"/media/responsive/redhat-live-sketch-480.webp 480w, /media/responsive/redhat-live-sketch-960.webp 960w, /media/responsive/redhat-live-sketch-1600.webp 1600w","imageSizes":"(max-width: 700px) 100vw, (max-width: 1100px) 70vw, 60vw"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"work","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"SnbJGY0ZAmOazIEkUlg20"}

@@ -1,0 +1,29 @@
+1:"$Sreact.fragment"
+2:I[1594,[],"OutletBoundary"]
+3:"$Sreact.suspense"
+7:I[1594,[],"ViewportBoundary"]
+8:I[1594,[],"MetadataBoundary"]
+a:I[7059,[],""]
+b:I[63,[],""]
+e:I[9711,["410","static/chunks/410-88d3bb55dbeb8f76.js","177","static/chunks/app/layout-5bc047e0cd3a0628.js"],"Navigation"]
+f:I[1860,["410","static/chunks/410-88d3bb55dbeb8f76.js","177","static/chunks/app/layout-5bc047e0cd3a0628.js"],"RouteArrival"]
+11:I[8836,["410","static/chunks/410-88d3bb55dbeb8f76.js","177","static/chunks/app/layout-5bc047e0cd3a0628.js"],"MobileProjectLink"]
+12:I[5006,["410","static/chunks/410-88d3bb55dbeb8f76.js","177","static/chunks/app/layout-5bc047e0cd3a0628.js"],"AnalyticsConsent"]
+13:I[8410,["410","static/chunks/410-88d3bb55dbeb8f76.js","605","static/chunks/605-64f4a169bdbedb7e.js","744","static/chunks/744-a0ab3f8e5ab97fc9.js","974","static/chunks/app/page-f8d84cba815dbd76.js"],""]
+14:I[5006,["410","static/chunks/410-88d3bb55dbeb8f76.js","177","static/chunks/app/layout-5bc047e0cd3a0628.js"],"CookieSettingsButton"]
+:HL["/_next/static/css/8cc7e8cf254cb1f5.css","style"]
+:HL["/media/now-brand-lockup.png","image"]
+6:X
+d:X
+d:C
+10:["$","style",null,{"children":"header nav{display:flex!important}.menu-toggle{display:none!important}.region-rail{display:block!important;overflow:visible!important}.intent-options{display:none!important}"}]
+0:{"buildId":"SnbJGY0ZAmOazIEkUlg20","data":[{"rsc":["$","$1","c",{"children":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L7",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L8",null,{"children":["$","$3",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"NOW Comms Asia — Events and B2B experiences across Asia"}],["$","meta","1",{"name":"description","content":"Events-led creative and B2B experiences for regional marketing teams across APJ and ASEAN. Kinda Different thinking, connected delivery."}],["$","meta","2",{"name":"robots","content":"index, follow"}]]}]}]}],null]}],"isPartial":"$@9","staleTime":"$6","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","template":["$","$Lb",null,{}]}]]}],"isPartial":"$@c","staleTime":"$6","varyParams":"$d"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/8cc7e8cf254cb1f5.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","$Le",null,{}],["$","$Lf",null,{}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.nowcomms.asia/#organization\",\"name\":\"NOW Comms Asia\",\"alternateName\":\"NOW Communications Asia\",\"url\":\"https://www.nowcomms.asia/\",\"logo\":\"https://www.nowcomms.asia/media/now-brand-lockup.png\",\"description\":\"Events-led creative, content and regional experiences across Asia.\"}"}}],["$","noscript",null,{"children":"$10"}],["$","main",null,{"id":"main","tabIndex":-1,"children":["$","$La",null,{"parallelRouterKey":"children","template":["$","$Lb",null,{}]}]}],["$","$L11",null,{}],["$","$L12",null,{}],["$","footer",null,{"children":[["$","div",null,{"className":"footer-top","children":[["$","img",null,{"decoding":"async","src":"/media/now-brand-lockup.png","width":"337","height":"263","alt":"NOW Comms Asia — Kinda Different"}],["$","p",null,{"children":["Good questions.",["$","br",null,{}],"Different possibilities.",["$","br",null,{}],"Across Asia."]}],["$","$L13",null,{"className":"text-link","href":"/start-a-project?source=footer","children":"Let’s make something move ↗"}]]}],["$","div",null,{"className":"footer-bottom","children":[["$","span",null,{"children":["© ",2026," NOW Communications Asia"]}],["$","div",null,{"children":[["$","a",null,{"href":"https://nowdmc.com/","target":"_blank","rel":"noreferrer","children":"Our destination division · NowDMC ↗"}],["$","$L13",null,{"href":"/privacy","children":"Privacy"}],["$","$L13",null,{"href":"/cookies","children":"Cookies"}],["$","$L14",null,{}],["$","$L13",null,{"href":"/accessibility","children":"Accessibility"}]]}]]}]]}]]}]}]]}],"isPartial":"$@15","staleTime":"$6","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@16","rootVaryParams":null,"needsRuntimeRequest":"$@17"}
+4:null
+6:300
+17:true
+6:C
+16:0
+9:"$undefined"
+c:"$undefined"
+15:"$undefined"
+5:"$undefined"

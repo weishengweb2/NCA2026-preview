@@ -1,2 +1,9 @@
-User-agent: *
-Disallow: /
+User-Agent: *
+Allow: /
+Disallow: /review/
+Disallow: /review-11/
+Disallow: /review.html
+Disallow: /identity-05.html
+Disallow: /game.html
+
+Sitemap: https://www.nowcomms.asia/sitemap.xml
