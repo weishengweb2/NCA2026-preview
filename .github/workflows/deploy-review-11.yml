@@ -1,11 +1,19 @@
-name: Install verified Review 11
+name: Install verified NOW main website
 on:
   workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Enter DEPLOY after Andrew approval and verified inbox test'
+        required: true
+        type: string
 permissions:
   contents: read
+concurrency:
+  group: now-main-release
+  cancel-in-progress: false
 jobs:
   install:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && inputs.confirm == 'DEPLOY'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
@@ -13,17 +21,54 @@ jobs:
       pages: write
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-      - name: Verify and install fixed review package
+        with:
+          fetch-depth: 0
+      - name: Verify exact package and preserve concurrent changes
         run: |
-          echo '2328a8a267076cb8da53972c450201f5c6fac9bb8759a9f9308ba66efc29a427  review-11-build.zip' | sha256sum --check --strict
-          git rm --ignore-unmatch -- review-11/review/__next._full.txt review-11/review/__next._tree.txt review-11/review/__next.review.__PAGE__.txt review-11/review/index.html review-11/review/index.txt
-          unzip -oq review-11-build.zip
-          test -f review-11/index.html
-          test -f review-11/work/mclaren-unconventional-symphony/index.html
-          test ! -f review-11/review/index.html
-          git add -- review-11
+          echo '138d7180c2c9ca72e413aa309c2a7afd0ffb517abd894116b1f5fe2e103fb700  now-main-2026-10-05.zip' | sha256sum --check --strict
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, subprocess, zipfile
+          root=pathlib.Path.cwd()
+          sha=lambda b:hashlib.sha256(b).hexdigest()
+          with zipfile.ZipFile('now-main-2026-10-05.zip') as z:
+              m=json.loads(z.read('release.json'))
+              assert m['baselineCommit']=='80e0e41ce8b91a9a7b3507be72f56f6ce16e6957'
+              assert m['origin']=='https://www.nowcomms.asia' and m['basePath']==''
+              assert len(m['files'])==388 and len(m['redirects'])==62
+              assert (root/'CNAME').read_text().strip()=='www.nowcomms.asia'
+              subprocess.run(['git','merge-base','--is-ancestor',m['baselineCommit'],'HEAD'],check=True)
+              for b in m['baseline']:
+                  f=root/b['path']
+                  assert f.is_file() and sha(f.read_bytes())==b['sha256'], 'Concurrent change: '+b['path']
+              listed={f['path'] for f in m['files']}
+              assert len(listed)==len(m['files'])
+              actual={i.filename.removeprefix('payload/') for i in z.infolist() if i.filename.startswith('payload/') and not i.is_dir()}
+              assert actual==listed
+              for f in m['files']:
+                  p=pathlib.PurePosixPath(f['path'])
+                  assert not p.is_absolute() and '..' not in p.parts
+                  assert not any(x in ('.git','.github','.env','node_modules','signatures') for x in p.parts)
+                  assert p.name!='CNAME'
+                  dest=root/p
+                  assert not any(parent.is_symlink() for parent in [dest,*dest.parents])
+                  data=z.read('payload/'+f['path'])
+                  assert len(data)==f['bytes'] and sha(data)==f['sha256']
+              if os.environ.get('RELEASE_VERIFY_ONLY')!='1':
+                  for f in m['files']:
+                      dest=root/f['path']; dest.parent.mkdir(parents=True,exist_ok=True)
+                      dest.write_bytes(z.read('payload/'+f['path']))
+                      assert sha(dest.read_bytes())==f['sha256']
+                  for b in m['baseline']:
+                      if b['path'] not in listed:
+                          assert sha((root/b['path']).read_bytes())==b['sha256'], 'Unrelated file changed: '+b['path']
+                  (root/'.git/now-release-paths').write_bytes(b'\0'.join(f['path'].encode() for f in m['files'])+b'\0')
+          print('Verified 388 public files, 62 legacy redirects and unchanged unrelated files.')
+          PY
+      - name: Commit verified production build
+        run: |
+          git add --pathspec-from-file=.git/now-release-paths --pathspec-file-nul
           if ! git diff --cached --quiet; then
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Remove internal review copy from traditional website preview'
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Release verified 25-case NOW website on main domain'
             git push origin HEAD:main
           fi
       - name: Request existing Pages build
