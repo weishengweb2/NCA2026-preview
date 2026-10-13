@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       confirm:
-        description: 'Enter DEPLOY after Andrew approval and verified inbox test'
+        description: 'Enter DEPLOY for the client-approved dig case study'
         required: true
         type: string
 permissions:
@@ -25,16 +25,16 @@ jobs:
           fetch-depth: 0
       - name: Verify exact package and preserve concurrent changes
         run: |
-          echo '138d7180c2c9ca72e413aa309c2a7afd0ffb517abd894116b1f5fe2e103fb700  now-main-2026-10-05.zip' | sha256sum --check --strict
+          echo 'd99736c1025411e98868019cf13de8c4063f9b6fccc3188ced83ba41b17e3c8c  dig-2026-10-13.zip' | sha256sum --check --strict
           python3 - <<'PY'
           import hashlib, json, os, pathlib, subprocess, zipfile
           root=pathlib.Path.cwd()
           sha=lambda b:hashlib.sha256(b).hexdigest()
-          with zipfile.ZipFile('now-main-2026-10-05.zip') as z:
+          with zipfile.ZipFile('dig-2026-10-13.zip') as z:
               m=json.loads(z.read('release.json'))
-              assert m['baselineCommit']=='80e0e41ce8b91a9a7b3507be72f56f6ce16e6957'
+              assert m['baselineCommit']=='f1c0ca74cae43b23a3abc9943b9188c229dfc781'
               assert m['origin']=='https://www.nowcomms.asia' and m['basePath']==''
-              assert len(m['files'])==388 and len(m['redirects'])==62
+              assert len(m['files'])==196
               assert (root/'CNAME').read_text().strip()=='www.nowcomms.asia'
               subprocess.run(['git','merge-base','--is-ancestor',m['baselineCommit'],'HEAD'],check=True)
               for b in m['baseline']:
@@ -62,13 +62,13 @@ jobs:
                       if b['path'] not in listed:
                           assert sha((root/b['path']).read_bytes())==b['sha256'], 'Unrelated file changed: '+b['path']
                   (root/'.git/now-release-paths').write_bytes(b'\0'.join(f['path'].encode() for f in m['files'])+b'\0')
-          print('Verified 388 public files, 62 legacy redirects and unchanged unrelated files.')
+          print('Verified dig case-study release and unchanged unrelated files.')
           PY
       - name: Commit verified production build
         run: |
           git add --pathspec-from-file=.git/now-release-paths --pathspec-file-nul
           if ! git diff --cached --quiet; then
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Release verified 25-case NOW website on main domain'
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Publish client-approved dig ISS World case study'
             git push origin HEAD:main
           fi
       - name: Request existing Pages build
