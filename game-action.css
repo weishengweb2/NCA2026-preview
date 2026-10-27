@@ -39,3 +39,136 @@ main h1[tabindex="-1"]:focus{outline:none}
 @media(max-width:600px){.practice-guide{padding:12px}.practice-guide>div{display:block}.practice-guide button{margin-top:8px}.practice-guide p{font-size:14px}}
 .controls-page{max-width:1120px;margin:auto;padding:48px 28px 64px}.controls-page h1{font-size:clamp(42px,7vw,80px);line-height:1;margin:20px 0}.controls-page>.lead{max-width:660px}.controls-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0}.controls-grid section{background:#fff;color:#202020;border:1px solid #d5d3cd;border-radius:20px;padding:22px}.controls-grid h2{font-size:23px;line-height:1.15;margin:16px 0 10px}.controls-grid p{font-size:16px;line-height:1.5;margin:0}.control-key{display:inline-block;color:#202020;background:#ff6a2a;padding:7px 10px;border-radius:999px;font-weight:800;font-size:13px}.controls-page>.primary{margin-top:16px}.controls-page>.smallprint{font-size:14px;max-width:760px}@media(max-width:800px){.controls-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:500px){.controls-page{padding:28px 18px 44px}.controls-grid{grid-template-columns:1fr;gap:12px}.controls-grid section{padding:18px}.controls-page>.primary{width:100%;font-size:16px}}
 .game-exit-bar{position:sticky;top:0;z-index:9;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;padding:8px 4vw;background:#171917;border-bottom:1px solid #616759;padding-top:max(8px,env(safe-area-inset-top))}.game-exit-bar>span{font-size:10px;letter-spacing:.08em;color:#c3c7bb}.game-exit-bar a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 16px;border:1px solid #ff4e00;border-radius:999px;background:#ff4e00;color:#171917;text-decoration:none;font-size:14px;font-weight:700;white-space:nowrap}.game-exit-bar a>span{font-size:22px;line-height:1}.game-exit-bar a:hover{background:#ff743b}.exit-modal .primary{margin-top:20px;text-decoration:none}.exit-modal .quiet-button{display:block;margin-top:10px}.practice-guide{top:76px}@media(max-width:380px){.game-exit-bar{gap:8px}.game-exit-bar>span{font-size:9px}.game-exit-bar a{font-size:13px;padding:10px 12px}}
+
+/* Gameplay occupies the available screen; briefings and results still scroll. */
+.compact-label { display: none; }
+@media (max-width: 1024px) {
+  body.in-action {
+    height: 100vh;
+    height: 100svh;
+    height: 100dvh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+  .in-action .game-exit-bar {
+    position: relative;
+    min-height: 52px;
+    padding: max(4px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) 4px max(8px, env(safe-area-inset-left));
+  }
+  .in-action .game-exit-bar a { min-height: 44px; padding: 6px 12px; }
+  .in-action #app {
+    min-height: 0;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+  .in-action .topbar { min-height: 52px; padding: 4px 8px; gap: 0; }
+  .in-action .game-wordmark,
+  .in-action .prototype,
+  .in-action .full-label,
+  .in-action .game-footer { display: none; }
+  .in-action .compact-label { display: inline; }
+  .in-action .top-actions { width: 100%; gap: 6px; flex-wrap: nowrap; }
+  .in-action .top-actions .icon-button {
+    flex: 1;
+    min-width: 0;
+    min-height: 44px;
+    padding: 6px 4px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .in-action .top-actions .icon-button span { margin: 0; }
+  .in-action .action-shell {
+    width: 100%;
+    min-height: 0;
+    max-width: none;
+    margin: 0;
+    padding: 4px max(8px, env(safe-area-inset-right)) max(6px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+    display: grid;
+    grid-template-areas: "practice" "title" "hud" "agenda" "play";
+    grid-template-rows: auto auto auto auto minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+  .in-action .action-topline { grid-area: title; gap: 8px; }
+  .in-action .action-topline h1 { font-size: 18px; line-height: 1.15; margin: 2px 0 0; }
+  .in-action .run-clock { font-size: 25px; flex-shrink: 0; }
+  .in-action .run-hud { grid-area: hud; margin: 0; padding: 4px 0; gap: 10px; }
+  .in-action .run-hud > div { gap: 4px; }
+  .in-action .bar { width: clamp(28px, 10vw, 70px); }
+  .in-action .run-agenda {
+    grid-area: agenda;
+    margin: 0;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 1.25;
+    max-height: 54px;
+    overflow-y: auto;
+  }
+  .in-action .playfield-column {
+    grid-area: play;
+    min-height: 0;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 28px 132px;
+    gap: 4px;
+  }
+  .in-action .playfield { min-height: 0; border-radius: 10px; }
+  .in-action .playfield canvas { width: 100%; height: 100%; min-height: 0; }
+  .in-action .carry-label { left: 8px; top: 8px; padding: 6px 8px; max-width: 60%; }
+  .in-action .action-context { min-height: 0; padding: 0 2px; display: block; line-height: 16px; }
+  .in-action .action-context > span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .in-action .action-context > span:last-child { margin: 0; line-height: 12px; font-size: 9px; }
+  .in-action .action-controls {
+    display: grid;
+    grid-template-columns: 132px minmax(0, 1fr);
+    grid-template-rows: repeat(3, 44px);
+    gap: 0 10px;
+    align-items: stretch;
+  }
+  .in-action .dpad { grid-area: 1 / 1 / span 3; grid-template-columns: repeat(3, 44px); grid-template-rows: repeat(3, 44px); gap: 0; margin: 0; }
+  .in-action .dpad button { min-width: 44px; min-height: 44px; }
+  .in-action .action-controls > button {
+    min-height: 44px;
+    min-width: 0;
+    padding: 4px 10px;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    touch-action: manipulation;
+  }
+  .in-action .action-controls > button > b { font-size: 12px; letter-spacing: 0; }
+  .in-action .action-controls > button > span { font-size: 9px; line-height: 1.2; text-align: right; }
+  .in-action .do-button { grid-area: 1 / 2; }
+  .in-action .boundary-button { grid-area: 2 / 2; }
+  .in-action .sprint-button { grid-area: 3 / 2; }
+  .in-action .mission-list,
+  .in-action .control-footnote { display: none; }
+  .in-action .practice-guide { grid-area: practice; position: static; margin: 0; padding: 6px 8px; max-height: 66px; overflow-y: auto; }
+  .in-action .practice-guide > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px; }
+  .in-action .practice-guide strong { font-size: 12px; }
+  .in-action .practice-guide p { margin: 2px 0 0; font-size: 11px; line-height: 1.2; }
+  .in-action .practice-guide button { margin: 0; min-height: 44px; padding: 6px 8px; font-size: 11px; white-space: normal; }
+  .in-action .modal { max-height: calc(100dvh - 24px); overflow-y: auto; }
+}
+@media (max-width: 1024px) and (min-aspect-ratio: 4/3) and (max-height: 600px) {
+  body.in-action { grid-template-rows: minmax(0, 1fr); }
+  .in-action .game-exit-bar { position: absolute; top: env(safe-area-inset-top); right: env(safe-area-inset-right); width: 148px; min-height: 48px; padding: 2px 6px; background: transparent; border: 0; }
+  .in-action .game-exit-bar > span { display: none; }
+  .in-action .topbar { min-height: 48px; padding: max(2px, env(safe-area-inset-top)) calc(152px + env(safe-area-inset-right)) 2px max(8px, env(safe-area-inset-left)); }
+  .in-action .action-shell {
+    grid-template-areas: "practice practice" "title hud" "agenda agenda" "play play";
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto auto minmax(0, 1fr);
+  }
+  .in-action .run-hud { border: 0; }
+  .in-action .playfield-column { grid-template-columns: minmax(0, 1fr) 228px; grid-template-rows: minmax(0, 1fr) 28px; gap: 4px 8px; }
+  .in-action .playfield { grid-area: 1 / 1; }
+  .in-action .action-context { grid-area: 2 / 1; }
+  .in-action .action-controls { grid-area: 1 / 2 / span 2; align-self: end; }
+  .in-action .action-controls > button { flex-direction: column; justify-content: center; gap: 0; padding: 4px; }
+  .in-action .action-controls > button > b { font-size: 11px; }
+  .in-action .action-controls > button > span { font-size: 8px; text-align: center; }
+  .in-action .practice-guide { max-height: 44px; padding: 0 6px; }
+}
