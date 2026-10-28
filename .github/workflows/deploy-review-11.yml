@@ -1,9 +1,9 @@
-name: Install verified NOW main website
+name: Install verified corporate enquiry fallback
 on:
   workflow_dispatch:
     inputs:
       confirm:
-        description: 'Enter DEPLOY for the client-approved dig case study'
+        description: 'Enter DEPLOY for the approved enquiry email fallback'
         required: true
         type: string
 permissions:
@@ -25,14 +25,14 @@ jobs:
           fetch-depth: 0
       - name: Verify exact package and preserve concurrent changes
         run: |
-          echo 'd99736c1025411e98868019cf13de8c4063f9b6fccc3188ced83ba41b17e3c8c  dig-2026-10-13.zip' | sha256sum --check --strict
+          echo '98125e940013a4a907b2efb364d82097cda9d94cd4ac7cbc508baeedf3244f72  corporate-enquiry-fallback-2026-10-28-deploy.zip' | sha256sum --check --strict
           python3 - <<'PY'
           import hashlib, json, os, pathlib, subprocess, zipfile
           root=pathlib.Path.cwd()
           sha=lambda b:hashlib.sha256(b).hexdigest()
-          with zipfile.ZipFile('dig-2026-10-13.zip') as z:
+          with zipfile.ZipFile('corporate-enquiry-fallback-2026-10-28-deploy.zip') as z:
               m=json.loads(z.read('release.json'))
-              assert m['baselineCommit']=='f1c0ca74cae43b23a3abc9943b9188c229dfc781'
+              assert m['baselineCommit']=='e305448fc7aa266b321bd9c0e838e4deed39e129'
               assert m['origin']=='https://www.nowcomms.asia' and m['basePath']==''
               assert len(m['files'])==196
               assert (root/'CNAME').read_text().strip()=='www.nowcomms.asia'
@@ -62,13 +62,13 @@ jobs:
                       if b['path'] not in listed:
                           assert sha((root/b['path']).read_bytes())==b['sha256'], 'Unrelated file changed: '+b['path']
                   (root/'.git/now-release-paths').write_bytes(b'\0'.join(f['path'].encode() for f in m['files'])+b'\0')
-          print('Verified dig case-study release and unchanged unrelated files.')
+          print('Verified corporate enquiry fallback and unchanged unrelated files.')
           PY
       - name: Commit verified production build
         run: |
           git add --pathspec-from-file=.git/now-release-paths --pathspec-file-nul
           if ! git diff --cached --quiet; then
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Publish client-approved dig ISS World case study'
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Publish approved corporate enquiry email fallback'
             git push origin HEAD:main
           fi
       - name: Request existing Pages build
