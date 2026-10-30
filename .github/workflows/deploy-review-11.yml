@@ -1,9 +1,9 @@
-name: Install verified corporate enquiry fallback
+name: Install approved Symrise case study
 on:
   workflow_dispatch:
     inputs:
       confirm:
-        description: 'Enter DEPLOY for the approved enquiry email fallback'
+        description: 'Enter DEPLOY for approved Symrise website case study'
         required: true
         type: string
 permissions:
@@ -25,16 +25,16 @@ jobs:
           fetch-depth: 0
       - name: Verify exact package and preserve concurrent changes
         run: |
-          echo '98125e940013a4a907b2efb364d82097cda9d94cd4ac7cbc508baeedf3244f72  corporate-enquiry-fallback-2026-10-28-deploy.zip' | sha256sum --check --strict
+          echo '66acab3dc8163e862fd6d35ecd58da9da592c818040051d5f7aba1309b67bcd7  symrise-case-study-2026-10-30-deploy.zip' | sha256sum --check --strict
           python3 - <<'PY'
           import hashlib, json, os, pathlib, subprocess, zipfile
           root=pathlib.Path.cwd()
           sha=lambda b:hashlib.sha256(b).hexdigest()
-          with zipfile.ZipFile('corporate-enquiry-fallback-2026-10-28-deploy.zip') as z:
+          with zipfile.ZipFile('symrise-case-study-2026-10-30-deploy.zip') as z:
               m=json.loads(z.read('release.json'))
-              assert m['baselineCommit']=='e305448fc7aa266b321bd9c0e838e4deed39e129'
+              assert m['baselineCommit']=='f8478025032f3c72a9a612fe629654a71eb73592'
               assert m['origin']=='https://www.nowcomms.asia' and m['basePath']==''
-              assert len(m['files'])==196
+              assert len(m['files'])==206
               assert (root/'CNAME').read_text().strip()=='www.nowcomms.asia'
               subprocess.run(['git','merge-base','--is-ancestor',m['baselineCommit'],'HEAD'],check=True)
               for b in m['baseline']:
@@ -62,13 +62,13 @@ jobs:
                       if b['path'] not in listed:
                           assert sha((root/b['path']).read_bytes())==b['sha256'], 'Unrelated file changed: '+b['path']
                   (root/'.git/now-release-paths').write_bytes(b'\0'.join(f['path'].encode() for f in m['files'])+b'\0')
-          print('Verified corporate enquiry fallback and unchanged unrelated files.')
+          print('Verified approved Symrise case study and unchanged unrelated files.')
           PY
       - name: Commit verified production build
         run: |
           git add --pathspec-from-file=.git/now-release-paths --pathspec-file-nul
           if ! git diff --cached --quiet; then
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Publish approved corporate enquiry email fallback'
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Publish approved Symrise case study and Events listing'
             git push origin HEAD:main
           fi
       - name: Request existing Pages build
