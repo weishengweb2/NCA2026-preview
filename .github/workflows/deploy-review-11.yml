@@ -25,16 +25,16 @@ jobs:
           fetch-depth: 0
       - name: Verify exact package and preserve concurrent changes
         run: |
-          echo '66acab3dc8163e862fd6d35ecd58da9da592c818040051d5f7aba1309b67bcd7  symrise-case-study-2026-10-30-deploy.zip' | sha256sum --check --strict
+          echo '068be22184a404aef9a1543a9c3d7a011d1d8fe0986ca010b8b8afd35990cfef  symrise-shared-runtime-2026-10-30.zip' | sha256sum --check --strict
           python3 - <<'PY'
           import hashlib, json, os, pathlib, subprocess, zipfile
           root=pathlib.Path.cwd()
           sha=lambda b:hashlib.sha256(b).hexdigest()
-          with zipfile.ZipFile('symrise-case-study-2026-10-30-deploy.zip') as z:
+          with zipfile.ZipFile('symrise-shared-runtime-2026-10-30.zip') as z:
               m=json.loads(z.read('release.json'))
-              assert m['baselineCommit']=='f8478025032f3c72a9a612fe629654a71eb73592'
+              assert m['baselineCommit']=='348de262a02c3d07256f85e6b256f2cf04df3147'
               assert m['origin']=='https://www.nowcomms.asia' and m['basePath']==''
-              assert len(m['files'])==206
+              assert len(m['files'])==21
               assert (root/'CNAME').read_text().strip()=='www.nowcomms.asia'
               subprocess.run(['git','merge-base','--is-ancestor',m['baselineCommit'],'HEAD'],check=True)
               for b in m['baseline']:
